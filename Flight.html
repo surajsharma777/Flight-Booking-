@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Airline Booking System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+<body class="flightbody">
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Yoyo Airlines Logo.png" alt="Airlines">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Flight.html">Flights</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="booking-form-box">
+        <div class="radio-btn">
+            <input type="radio" class="btn" name="check" checked="checked"><span>Roundtrip</span>
+            <input type="radio" class="btn" name="check"><span>One Way</span>
+            <input type="radio" class="btn" name="check"><span>Multy-City</span>
+        </div>
+
+        <div class="booking-form">
+
+            <label>Flying From</label>
+            <input type="text" class="form-control" placeholder="City or Airport">
+            <label>Flying To</label>
+            <input type="text" class="form-control" placeholder="City or Airport">
+
+            <div class="input-grp">
+                <label>Departing</label>
+                <input type="date" class="form-control select-date">
+            </div>
+
+            <div class="input-grp">
+                <label>Returing</label>
+                <input type="date" class="form-control select-date">
+            </div>
+
+            <div class="input-grp">
+                <label>Adults</label>
+                <input type="number" class="form-control" value="1">
+            </div>
+
+            <div class="input-grp">
+                <label>Children</label>
+                <input type="number" class="form-control" value="0">
+            </div>
+
+            <div class="input-grp">
+                <label>Travel Class</label>
+                <select class="custom-select">
+                    <option value="1">Economy Class</option>
+                    <option value="1">Business Class</option>
+                </select>
+            </div>
+
+            <div class="input-grp">
+                <button type="button" class="btn btn-primary flight">Show Flight</button>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

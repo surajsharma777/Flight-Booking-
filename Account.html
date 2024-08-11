@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Airline Booking System</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d46534eb5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Yoyo Airlines Logo.png" alt="Airlines">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Flight.html">Flights</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="center">
+            <div class="sign-up">
+                <h1 id="title">Sign Up</h1>
+                <form>
+                    <div class="input-size">
+                        <div class="input-field" class="size" id="nameField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" class="sizeing" placeholder="Name">
+                        </div>
+
+                        <div class="input-field" class="size">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" class="sizeing" placeholder="Email">
+                        </div>
+
+                        <div class="input-field" class="size">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="Password" class="sizeing" placeholder="Password">
+                        </div>
+                        <p>Forgot password <a href="#">Click Here!</a></p>
+                    </div>
+
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn">Sign up</button>
+                        <button type="button" id="signinBtn" class="disable">Sign in</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        signinBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
